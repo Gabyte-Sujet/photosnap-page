@@ -1,0 +1,65 @@
+@media (max-width: 1200px) {
+	section.main .item .right-block {
+        flex: 1;
+    }
+    section.main .item .left-block .info h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 992px) {	
+	section.main .item .left-block {
+        flex: 2;
+    }
+}
+
+@media (max-width: 768px) {
+	header .flex-p nav,
+    header .flex-p .get-invite {
+        display: none;
+    }
+    header .flex-p .burger-bar {
+        display: block;
+    }
+    section.main .item{
+        flex-direction: column;
+    }
+    section.main .item .left-block {
+        padding: 70px 0;
+        order: 1;
+    }
+    section.main .item .right-block {
+        height: 50vh;
+    }
+    .footer-flex-p {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .logo-social {
+        height: 65px;
+    }
+    footer .logo-social a {
+        margin: 0 10px;
+    }
+    .footer-flex-p ul{
+        padding-left: 0;
+    }
+    .footer-flex-p nav {
+        margin-top: 40px;
+    }
+    .footer-flex-p ul li {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .footer-flex-p .invite-copy {
+        margin-top: 55px;
+    }
+    .footer-flex-p .invite-copy a{
+        text-align:left;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        margin-bottom: 15px;
+    }
+}

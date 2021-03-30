@@ -1,0 +1,380 @@
+html,body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 35px;
+    margin: 0 auto;
+}
+
+header .flex-p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+header .flex-p .logo {
+    flex: 1;
+    display: flex;
+}
+
+header .flex-p .logo a {
+    display: flex;
+    align-items: center;
+}
+
+header .flex-p .logo img {
+    width: 20px;
+    transform: rotate(-90deg);
+}
+
+header .flex-p .logo h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+header .flex-p nav {
+    flex: 1;
+}
+
+header .flex-p ul {
+    display: flex;
+    justify-content: center;
+}
+
+header .flex-p li {
+    margin: 0 15px;
+}
+
+header .flex-p li a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+header .flex-p .get-invite {
+    flex: 1;
+    text-align: right;
+    
+}
+
+header .flex-p .get-invite a {
+    background-color: #000000;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+
+header .flex-p .burger-bar {
+    display: none;
+    font-size: 24px;
+}
+
+/* ---------------------Section.main------------- */
+
+section.main .item {
+    display: flex;
+}
+
+section.main .item > div {
+    flex: 1;
+    height: 70vh;
+}
+
+section.main .item .left-block {
+    background-color :#000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.main .item .left-block .info {
+    padding: 0px 80px;
+}
+
+section.main .item .left-block .info h2 {
+    color: #ffffff;
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: 55px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+section.main .item .left-block .info p {
+    color: gray;
+    line-height: 25px;
+    font-size: 17px;
+    margin-bottom: 50px;
+}
+
+section.main .item .left-block .info .item-invite {
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size:14px;
+    display: inline-block;
+}
+
+.arr-style {
+    vertical-align: middle;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+section.main .item .right-block {
+    flex: 1.5;
+}
+
+section.main .item .right-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;;
+}
+
+/* --------------------section.main .second-block---------------- */
+
+
+section.main .other-block .left-block {
+    background-color: transparent;
+    order: 1;
+}
+
+section.main .other-block .left-block .info h2,
+section.main .other-block .left-block .info .item-invite,
+section.main .other-block .left-block .arr-style {
+    color: #000000;
+}
+
+section.main .item .bg-white {
+    background-color: transparent;
+}
+
+section.main .bg-white .left-block .info h2,
+section.main .bg-white .left-block .info .item-invite {
+    color: #000000;
+}
+
+
+
+/* --------------------section.stories--------------- */
+
+section.stories {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.stories .box:first-child {
+    background-image: url("../img/photo2.jpg");
+}
+
+section.stories .box:nth-child(2) {
+    background-image: url("../img/photo6.jpg");
+}
+
+section.stories .box:nth-child(3) {
+    background-image: url("../img/photo7.jpg");
+}
+
+section.stories .box:last-child {
+    background-image: url("../img/photo4.jpg");
+}
+
+section.stories .box {
+    padding: 40px 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    flex: 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 500px;
+}
+
+section.stories .box h5 {
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+section.stories .box p {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+section.stories .box p::after {
+    content: "";
+    display: block;
+    border: 1px solid #ffffff;
+    margin-top: 20px;
+    opacity: 50%;
+}
+
+section.stories .box .read-story a {
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ---------------------section.specs----------------- */
+
+section.specs {
+    padding: 80px 0;
+}
+
+section.specs .items{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
+
+section.specs .items .box{
+    flex: 1 280px;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+} 
+
+section.specs .items .box .icon {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.specs .spec-icons {
+    font-size: 80px;
+}
+
+section.specs .items .box h6 {
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+section.specs .items .box p {
+    font-size: 14px;
+    color: gray;
+    line-height: 22px;
+    text-align: center;
+}
+
+
+
+
+
+/* ---------------------------footer ----------------------- */
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 50px 0;
+}
+
+.footer-flex-p {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .logo-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 110px;
+}
+
+footer .logo-social a{
+    display: flex;
+    align-items: center;
+}
+
+footer .logo-social img {
+    width: 20px;
+    transform: rotate(-90deg);
+}
+
+footer .logo-social h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.footer-socials {
+    display: flex;
+}
+
+.footer-socials a {
+    color :#ffffff;
+    font-size: 22px;
+    margin-right: 15px;
+}
+
+.footer-flex-p nav {
+    flex: 1;
+}
+
+.footer-flex-p ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 100px;
+}
+
+.footer-flex-p ul li a {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;;
+}
+
+.footer-flex-p .invite-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-flex-p .invite-copy a {
+    color :#ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: right;
+}
+
+.footer-flex-p .invite-copy i {
+    margin-left:20px;
+    font-size:20px;
+    vertical-align: middle;
+}
+
+.footer-flex-p .invite-copy span {
+    color: gray;
+}
