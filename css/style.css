@@ -1,11 +1,13 @@
 html,body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 header {
     padding: 20px 0;
 }
+
 
 .container {
     max-width: 1170px;
@@ -139,11 +141,81 @@ section.main .item .right-block {
     flex: 1.5;
 }
 
+
+
+
+
+/* --------------------hover------------ */
+.item,
+.right-block {
+    overflow: hidden;
+}
+
 section.main .item .right-block img {
     width: 100%;
     height: 100%;
-    object-fit: cover;;
+    object-fit: cover;
+    transition: 0.5s;
+    transform: scale(1)
 }
+
+section.main .item .right-block img:hover {
+    transform: scale(1.1)
+}
+
+.item-invite i,
+section.stories .box .read-story a i,
+.footer-flex-p .invite-copy a i{
+    transform: translateX(0);
+    transition: 0.5s;
+}
+
+.item-invite:hover i,
+section.stories .box .read-story a:hover i,
+.footer-flex-p .invite-copy a:hover i {
+    transform: translateX(20px);
+}
+
+footer .logo-social a:hover {
+    color: mediumseagreen;
+}
+
+.footer-flex-p ul li a:hover {
+    color: dodgerblue;
+}
+
+header .flex-p li a {
+    padding-bottom: 5px;
+    position: relative;
+}
+
+header .flex-p li a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: dodgerblue;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+header .flex-p li a:hover::before {
+    width: 100%;
+}
+
+header .flex-p .get-invite a {
+    transition: 0.5s;
+    border: 1px solid #000
+}
+
+header .flex-p .get-invite a:hover {
+    color: #000;
+    background: #fff;
+    border: 1px solid #000
+}
+
+
 
 /* --------------------section.main .second-block---------------- */
 
